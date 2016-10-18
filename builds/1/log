@@ -1,0 +1,72 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building on master in workspace C:\Tools\Jenkins\jobs\MaveBuild\workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/scmgalaxy/helloworld-java-maven.git
+ > git.exe init C:\Tools\Jenkins\jobs\MaveBuild\workspace # timeout=10
+Fetching upstream changes from https://github.com/scmgalaxy/helloworld-java-maven.git
+ > git.exe --version # timeout=10
+ > git.exe -c core.askpass=true fetch --tags --progress https://github.com/scmgalaxy/helloworld-java-maven.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/scmgalaxy/helloworld-java-maven.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/scmgalaxy/helloworld-java-maven.git # timeout=10
+Fetching upstream changes from https://github.com/scmgalaxy/helloworld-java-maven.git
+ > git.exe -c core.askpass=true fetch --tags --progress https://github.com/scmgalaxy/helloworld-java-maven.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 686be29b1cc5f417da8ec140f358c2bc1c40b716 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 686be29b1cc5f417da8ec140f358c2bc1c40b716
+First time build. Skipping changelog.
+[workspace] $ cmd.exe /C "mvn install && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building my-maven 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ my-maven ---
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Tools\Jenkins\jobs\MaveBuild\workspace\src\main\resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ my-maven ---
+[INFO] Changes detected - recompiling the module!
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\Tools\Jenkins\jobs\MaveBuild\workspace\target\classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ my-maven ---
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Tools\Jenkins\jobs\MaveBuild\workspace\src\test\resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ my-maven ---
+[INFO] Changes detected - recompiling the module!
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to C:\Tools\Jenkins\jobs\MaveBuild\workspace\target\test-classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ my-maven ---
+[INFO] Surefire report directory: C:\Tools\Jenkins\jobs\MaveBuild\workspace\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.scmgalaxy.mavensample.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ my-maven ---
+[INFO] Building jar: C:\Tools\Jenkins\jobs\MaveBuild\workspace\target\my-maven-1.0-SNAPSHOT.jar
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ my-maven ---
+[INFO] Installing C:\Tools\Jenkins\jobs\MaveBuild\workspace\target\my-maven-1.0-SNAPSHOT.jar to C:\Windows\system32\config\systemprofile\.m2\repository\com\scmgalaxy\mavensample\my-maven\1.0-SNAPSHOT\my-maven-1.0-SNAPSHOT.jar
+[INFO] Installing C:\Tools\Jenkins\jobs\MaveBuild\workspace\pom.xml to C:\Windows\system32\config\systemprofile\.m2\repository\com\scmgalaxy\mavensample\my-maven\1.0-SNAPSHOT\my-maven-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.673 s
+[INFO] Finished at: 2016-10-12T08:33:30+05:30
+[INFO] Final Memory: 14M/117M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
